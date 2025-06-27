@@ -1,7 +1,10 @@
 let isRunningFootstep = false;
 
 // Ngăn scroll chuột (desktop)
-if (window.location.pathname.startsWith("/Portfolio")) {
+if (
+  window.location.pathname === "/" || 
+  window.location.pathname === "/Portfolio/"
+) {
   document.body.style.overflow = "hidden";
 
   window.addEventListener(
